@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <groupId>com.github.sstone</groupId>
+  <artifactId>scala-simple-archetype</artifactId>
+  <version>2.10.4-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>scala-simple-archetype</name>
+
+ <licenses>
+  <license>
+    <name>Apache 2.0</name>
+    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    <distribution>repo</distribution>
+  </license>
+</licenses>
+
+<scm>
+  <connection>scm:git:git@github.com:sstone/scala-simple-archetype.git</connection>
+  <developerConnection>scm:git:git@github.com:sstone/scala-simple-archetype.git</developerConnection>
+  <url>git@github.com:sstone/scala-simple-archetype.git</url>
+</scm>
+
+<developers>
+  <developer>
+    <id>sstone</id>
+  </developer>
+</developers>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>2.2</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
